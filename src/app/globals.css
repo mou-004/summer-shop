@@ -1,0 +1,44 @@
+@import "animate.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(255, 209, 102, 0.28), transparent 30%),
+    radial-gradient(circle at top right, rgba(0, 184, 169, 0.16), transparent 28%),
+    #fffaf0;
+}
+
+.summer-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.summer-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 22px 60px rgba(255, 122, 24, 0.2);
+}
+
+.nav-link-effect {
+  position: relative;
+}
+
+.nav-link-effect::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  left: 0;
+  bottom: -4px;
+  background: #ff7a18;
+  transition: width 0.25s ease;
+}
+
+.nav-link-effect:hover::after {
+  width: 100%;
+}

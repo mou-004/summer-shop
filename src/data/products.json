@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "UV Protection Sunglasses",
+    "brand": "SunShade",
+    "price": 15,
+    "rating": 4.7,
+    "stock": 10,
+    "description": "Stylish UV protection sunglasses perfect for summer outings.",
+    "image": "https://images.unsplash.com/photo-1511499767150-a48a237f0083?auto=format&fit=crop&w=900&q=80",
+    "category": "Accessories"
+  },
+  {
+    "id": 2,
+    "name": "Aloe Cooling Sunscreen",
+    "brand": "GlowCare",
+    "price": 22,
+    "rating": 4.8,
+    "stock": 16,
+    "description": "Lightweight sunscreen with aloe comfort for bright summer days.",
+    "image": "https://images.unsplash.com/photo-1556228578-0d85b1a4d571?auto=format&fit=crop&w=900&q=80",
+    "category": "Skincare"
+  },
+  {
+    "id": 3,
+    "name": "Beach Straw Hat",
+    "brand": "CoastWear",
+    "price": 18,
+    "rating": 4.5,
+    "stock": 8,
+    "description": "A breathable straw hat that keeps your look relaxed and summer-ready.",
+    "image": "https://images.unsplash.com/photo-1529958030586-3aae4ca485ff?auto=format&fit=crop&w=900&q=80",
+    "category": "Accessories"
+  },
+  {
+    "id": 4,
+    "name": "Tropical Summer Shirt",
+    "brand": "PalmFit",
+    "price": 28,
+    "rating": 4.6,
+    "stock": 14,
+    "description": "Soft and colorful tropical shirt designed for vacations and casual summer events.",
+    "image": "https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=900&q=80",
+    "category": "Outfits"
+  },
+  {
+    "id": 5,
+    "name": "Insulated Water Bottle",
+    "brand": "HydroMate",
+    "price": 20,
+    "rating": 4.9,
+    "stock": 20,
+    "description": "Keeps drinks cold during hot weather, outdoor walks, beach trips, and travel.",
+    "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=900&q=80",
+    "category": "Lifestyle"
+  },
+  {
+    "id": 6,
+    "name": "Beach Tote Bag",
+    "brand": "SunnyCarry",
+    "price": 24,
+    "rating": 4.4,
+    "stock": 12,
+    "description": "Spacious tote bag for towels, skincare, sunglasses, and daily summer essentials.",
+    "image": "https://images.unsplash.com/photo-1590874103328-eac38a683ce7?auto=format&fit=crop&w=900&q=80",
+    "category": "Bags"
+  }
+]
