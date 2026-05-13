@@ -13,7 +13,6 @@ export default async function MyProfilePage() {
   }
 
   const user = session.user;
-
   return (
     <section className="max-w-4xl mx-auto px-4 py-12">
       <div className="bg-base-100 rounded-[2rem] shadow-summer p-8 md:p-12 text-center animate__animated animate__fadeIn">
