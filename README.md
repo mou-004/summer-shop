@@ -1,123 +1,126 @@
-# SunCart – Summer Essentials Store
+# SunCart Summer Essentials Store
 
-SunCart is a modern summer eCommerce platform where users can explore and purchase seasonal products like sunglasses, summer outfits, skincare, beach accessories, and more.
+## Project Overview
 
-## Live URL
+SunCart is a modern summer focused eCommerce web application built with Next.js. The platform allows users to explore seasonal products such as sunglasses, summer outfits, skincare items, beach accessories, and other summer essentials. Users can browse products, view popular items, check product details, and place orders after authentication.
 
-Add your deployed live URL here after hosting:
+This project was developed for the assignment category: **category-A8-Jackfruit**.
 
-```txt
-https://your-suncart-live-url.vercel.app
-```
+## Live Website
 
-## Purpose
+Live URL:  
+https://peppy-salmiakki-cc091f.netlify.app
 
-The purpose of this project is to build a responsive summer product store with authentication, protected product details, user profile display, and profile update functionality.
+## Project Purpose
+
+The main purpose of this project is to create a responsive and user friendly summer eCommerce platform where users can securely browse products and access protected pages after login. The project uses authentication, protected routes, product data management, and a modern responsive layout.
 
 ## Key Features
 
-- Responsive Navbar with logo, Home, Products, and My Profile links
-- Conditional Navbar buttons for logged-in and logged-out users
+- Modern summer themed eCommerce design
+- Fully responsive layout for mobile, tablet, and desktop
 - Persistent Navbar and Footer
-- Route-based rendering with Next.js App Router
-- Static JSON product data with 6 summer products
-- Home page hero section with summer sale banner
-- Popular Products section showing 3 products
-- Summer Care Tips section
-- Top Brands section
-- Products page showing all products
-- Protected product details page
-- Login with email and password
-- Register with name, email, photo URL, and password
+- Route based page rendering using Next.js App Router
+- Product listing from static JSON data
+- Popular products section on the home page
+- Product details page with protected route
+- Login and registration system using BetterAuth
 - Google social login
-- My Profile page showing name, email, and photo
-- Update Information page for name and image
-- Responsive layout for mobile, tablet, and desktop
-- Hover effects and animation using Animate.css
+- User profile page for logged in users
+- Update profile information feature
+- Environment variables for secure configuration
+- Toast or form error message for authentication errors
+- Clean UI using Tailwind CSS and DaisyUI
+- Deployed application with working route reload support
 
-## Tech Stack
+## Main Pages
+
+### Home Page
+
+The home page includes:
+
+- Summer sale hero section
+- Popular products section
+- Summer care tips section
+- Top brands section
+
+### Products Page
+
+The products page displays summer products with important information such as:
+
+- Product image
+- Product name
+- Brand
+- Price
+- Rating
+- Stock
+- Category
+- View details button
+
+### Product Details Page
+
+The product details page is protected. Only authenticated users can access it. If a user is not logged in, they are redirected to the login page. After successful login, they can access the protected product details.
+
+### Login Page
+
+The login page includes:
+
+- Email input
+- Password input
+- Login button
+- Google login button
+- Register page link
+- Error message for failed login
+
+### Register Page
+
+The register page includes:
+
+- Name input
+- Email input
+- Photo URL input
+- Password input
+- Register button
+- Google login button
+- Login page link
+- Error message for failed registration
+
+### My Profile Page
+
+The profile page shows logged in user information such as:
+
+- Name
+- Email
+- Profile photo
+
+### Update Profile Page
+
+The update profile page allows the logged in user to update:
+
+- Name
+- Profile image URL
+
+## Technologies Used
 
 - Next.js
+- React
 - Tailwind CSS
 - DaisyUI
 - BetterAuth
-- Animate.css
+- MongoDB
+- JavaScript
+- Netlify
 
 ## NPM Packages Used
 
-- next
-- react
-- react-dom
-- better-auth
-- better-sqlite3 for local SQLite auth storage
-- tailwindcss
-- postcss
-- autoprefixer
-- daisyui
-- animate.css
-
-## Environment Variables
-
-Create a `.env.local` file in the project root:
-
-```env
-BETTER_AUTH_SECRET="replace-with-a-long-random-secret"
-BETTER_AUTH_URL="http://localhost:3000"
-NEXT_PUBLIC_APP_URL="http://localhost:3000"
-GOOGLE_CLIENT_ID="your-google-client-id"
-GOOGLE_CLIENT_SECRET="your-google-client-secret"
-```
-
-For Google login, use this callback URL in Google Cloud Console:
-
-```txt
-http://localhost:3000/api/auth/callback/google
-```
-
-## Run Locally
-
 ```bash
-npm install
-npx auth@latest migrate
-npm run dev
-```
-
-Open:
-
-```txt
-http://localhost:3000
-```
-
-## Deployment Note
-
-When hosting on Vercel, add all environment variables in the Vercel project settings. As this is a single page application style route-based project using Next.js App Router, Vercel handles route reloads correctly.
-
-## Meaningful GitHub Commit Messages
-
-1. Initial project setup with Next.js App Router
-2. Configure Tailwind CSS and DaisyUI theme
-3. Add summer product JSON data
-4. Create responsive Navbar and Footer
-5. Build Home page hero and popular products section
-6. Add Products page with product cards
-7. Add protected product details route
-8. Configure BetterAuth email and password authentication
-9. Add login and registration pages
-10. Add Google social login button
-11. Add My Profile page
-12. Add profile update feature
-13. Add responsive styling and hover animations
-14. Add README and environment variable guide
-
-
-## Install Note
-
-This JavaScript-only version uses BetterAuth with local SQLite through `better-sqlite3@12.9.0`. It does not use PostgreSQL, Prisma, Drizzle, MongoDB, TypeScript, or any `DATABASE_URL`.
-
-Use a fresh extracted folder before running:
-
-```bash
-npm install
-npx auth@latest migrate
-npm run dev
-```
+next
+react
+react-dom
+tailwindcss
+daisyui
+better-auth
+mongodb
+@better-auth/mongo-adapter
+react-hot-toast
+lottie-react
