@@ -20,7 +20,6 @@ export default function ProductsPage() {
   );
 }
   */
-
 import ProductCard from "../../components/ProductCard";
 import { getAllProducts } from "../../lib/products";
 
