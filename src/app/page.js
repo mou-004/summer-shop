@@ -258,7 +258,6 @@ export default function HomePage() {
                 )
               )}
             </div>
-
             <div className="mt-8 rounded-2xl bg-white/10 p-5">
               <p className="text-sm leading-6 text-gray-200">
                 SunCart brings together practical summer essentials in one
